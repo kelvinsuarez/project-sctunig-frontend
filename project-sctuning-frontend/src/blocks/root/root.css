@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "HardRace";
+    src: url("../../font/Hard Race.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../../font/Roboto-Italic.ttf") format("truetype");
+    font-style: italic;
+}
+
+.root{
+    background-color: black;
+    min-width: 1280px;
+    margin: auto;
+    font-family: "HardRace";
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.header__text{
+    font-family: "Roboto";
+}
