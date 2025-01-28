@@ -1,9 +1,4 @@
 @font-face {
-    font-family: "HardRace";
-    src: url("../../font/Hard Race.otf") format("opentype");
-}
-
-@font-face {
     font-family: "Roboto";
     src: url("../../font/Roboto-Italic.ttf") format("truetype");
     font-style: italic;
@@ -11,16 +6,19 @@
 
 .root{
     background-color: black;
+    background-image: url('../../images/background.png');
+    background-size:calc(70%);
+    background-position:center 80%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     min-width: 1280px;
     margin: auto;
-    font-family: "HardRace";
+    font-family: "Roboto";
     color:white;
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-}
-.header__text{
-    font-family: "Roboto";
+    height: 1080px;
 }

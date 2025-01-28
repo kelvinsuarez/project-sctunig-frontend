@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "HardRace";
+    src: url("../../font/Hard Race.otf") format("opentype");
+}
+
+.header{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    border-bottom: 2px solid grey;
+    position: relative;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.header__logo{
+    height: 50px;
+    align-items: flex-start;
+}
+.header__title{
+    margin: 0;
+    margin-left: 30%;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "HardRace";
+}
+
+.header__subtitle{
+    margin: 0;
+    margin-left: 30%;
+    margin-top: 2%;
+    font-size: 1.1rem;
+    color: #9E0105;
+    text-align: center;
+}
+
+nav{
+    position: relative;
+    left: 15px;
+    bottom:-38px;
+}
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 5px;
+    padding: 0;
+}
+
+.nav li{
+    padding: 5px;
+    border-top: 2px solid white;
+    border-right: 1px solid white;
+    cursor: pointer;
+    transition: color o.3s ease;
+}
+
+
+.nav li:hover{
+    color: #9E0105;
+    border-top: 2px solid #9E0105;
+    border-right: 2px solid #9E0105;
+}
