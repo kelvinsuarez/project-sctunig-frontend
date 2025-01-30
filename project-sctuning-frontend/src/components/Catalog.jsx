@@ -1,9 +1,10 @@
+import ImageList from "./ImageList";
 
 function Catalog() {
   return (
     <div>
       <h1>Catalog Page</h1>
-      {/* Contenido adicional */}
+      <ImageList folder={"catalog"}/>
     </div>
   );
 }

@@ -14,9 +14,9 @@ function Header() {
             <nav className="nav">
                 <ul>
                     <li onClick={() => navigate('/')}>Home</li>
-                    <li onClick={() => navigate('/catalog')}>Catalogo</li>
-                    <li onClick={() => navigate('/gallery')}>Galerya</li>
-                    <li onClick={() => navigate('/info')}>Informacion</li>
+                    <li onClick={() => navigate('/catalog')}>Catálogo</li>
+                    <li onClick={() => navigate('/gallery')}>Galería</li>
+                    <li onClick={() => navigate('/info')}>Información</li>
                     <li onClick={() => navigate('/contacto')}>Contacto</li>
                 </ul>
             </nav>
