@@ -1,7 +1,6 @@
 import {useState} from "react";
-import uploadImage from "../utils/uploadImage";
 
-const ImageUpload = ({ folder }) => {
+function ImageUpload({ folder, handleUploadImage }) {
     const [file, setFile] =  useState(null);
 
     const handleFileChange = (e) => {
@@ -11,8 +10,7 @@ const ImageUpload = ({ folder }) => {
     const handleUpload = async () => {
         if (file) {
             try {
-                const result = await uploadImage(file, folder);
-                console.log('URL de la imagen subida', result.url);
+                await handleUploadImage(file, folder);
             } catch (error) {
                 console.error('Error al subir la imagen:', error)
             }          

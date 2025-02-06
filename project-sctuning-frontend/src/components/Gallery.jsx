@@ -1,30 +1,29 @@
-import { useState, useEffect } from "react";
-import { IKImage } from 'imagekitio-react';
-import fetchImages from "../utils/imagekitApi";
+// import { useState, useEffect } from "react";
+// import { IKImage } from 'imagekitio-react';
+import { useEffect } from "react";
+import CardImage from "./CardImage";
+// import fetchImages from "../utils/imagekitApi";
 
-function Gallery({ folder }) {
-    const [images, setImages] = useState([]);
-
+function Gallery({ folder, loadImages, images }) {
     useEffect(() => {
-        const loadImages = async () => {
-            try {
-                const imagesData = await fetchImages(folder);
-                setImages(imagesData);
-            } catch (error) {
-                console.error('Error al cargar las imágenes:', error);
-            }
-        };
-        loadImages();
-    }, [folder]);
+        if (folder){
+            loadImages(folder);
+        }
+    }, [folder, loadImages]);
+
+    if (!images || images.length === 0) {
+        return <div>No hay imágenes disponibles</div>;
+      }
 
   return (
-    <div>
+    <div className="gallery">
         {images.map((image) =>(
-            <IKImage
-                key={images.fileId}
-                urlEndpoint="https://ik.imagekit.io/o63q7txss"
-                path={image.filePath}
-                transformation={[{ height: 300, width: 300}]}
+            <CardImage
+                key={image.fileId}
+                image={image}
+                // urlEndpoint="https://ik.imagekit.io/o63q7txss"
+                // path={image.filePath}
+                // transformation={[{ height: 300, width: 300}]}
             />
         ))}
     </div>
