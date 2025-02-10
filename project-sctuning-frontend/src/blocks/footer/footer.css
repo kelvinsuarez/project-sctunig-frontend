@@ -1,8 +1,9 @@
 .footer{
-    margin-top: 146px;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+    margin-top: 30px;
     width: 69%;
     height: 18px;
-    margin-bottom: 45px;
     left: 5px;
     display: flex;
 }

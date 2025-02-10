@@ -52,7 +52,7 @@ class ImagekitApi {
 }
 
 const imageKitApi = new ImagekitApi({
-    encodedKey: 'cHJpdmF0ZV9Yays1NEZLblFkZmlVN0hSZlFyTjJ0ZXA0KzQ9OnB1YmxpY19kWGcwNEVYMGZOUXcvcnRiby9xdzF4UGF4bEE9',
+    encodedKey:'cHJpdmF0ZV9Yays1NEZLblFkZmlVN0hSZlFyTjJ0ZXA0KzQ9OnB1YmxpY19kWGcwNEVYMGZOUXcvcnRiby9xdzF4UGF4bEE9',
     urlEndpoint: 'https://ik.imagekit.io/o63q7txss'
 });
 

@@ -1,0 +1,26 @@
+[
+    {
+        "name": "civic-gris",
+        "filePath": "src/images/galeria-carros/civic-gris.jpg"
+    },
+    {
+        "name": "corolla-azul",
+        "filePath": "src/images/galeria-carros/corolla-azul.jpg"
+    },
+    {
+        "name": "crv-roja",
+        "filePath": "src/images/galeria-carros/crv-roja.jpg"
+    },
+    {
+        "name": "explorer",
+        "filePath": "src/images/galeria-carros/explorel.jpg"
+    },
+    {
+        "name": "fit-negro",
+        "filePath": "src/images/galeria-carros/fit-negro.jpg"
+    },
+    {
+        "name": "k5",
+        "filePath": "src/images/galeria-carros/k5.jpg"
+    }
+]
