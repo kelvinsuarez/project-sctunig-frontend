@@ -1,0 +1,36 @@
+@keyframes rotacion {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.home__container-rueda{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home__base-rueda{
+    position: absolute;
+    height: 80vh;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    overflow: hidden;
+}
+
+.home__rueda{
+    display: flex;
+    margin: 0%;
+    position: relative;
+    bottom: -100px;
+    left: -250px;
+    width: 1100px;
+    transform-origin: center;
+    animation:  rotacion 20s linear infinite;
+    overflow: hidden;
+}

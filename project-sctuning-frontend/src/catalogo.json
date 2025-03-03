@@ -1,0 +1,51 @@
+[
+    {
+        "name": "michelin",
+        "filePath": "src/images/catalogo/michelin.jpeg"
+    },
+    {
+        "name": "bridgestone-potenza",
+        "filePath": "src/images/catalogo/bridgestone-potenza.jpeg"
+    },
+    {
+        "name": "dunlop",
+        "filePath": "src/images/catalogo/dunlop.jpeg"
+    },
+    {
+        "name": "falken-amarilla",
+        "filePath": "src/images/catalogo/falken-amarilla.jpeg"
+    },
+    {
+
+        "name": "falken-blanca",
+        "filePath": "src/images/catalogo/falken-blanca.jpeg"
+    },
+    {
+        "name": "firehauwk-indy500",
+        "filePath": "src/images/catalogo/firehauwk-indy500.jpeg"
+    },
+    {
+        "name": "good-yeard",
+        "filePath": "src/images/catalogo/good-year.jpeg"
+    },
+    {
+        "name": "kumho",
+        "filePath": "src/images/catalogo/kumho.jpeg"
+    },
+    {
+        "name": "nitto-amarilla",
+        "filePath": "src/images/catalogo/nitto-amarilla.jpeg"
+    },
+    {
+        "name": "nitto-blanca",
+        "filePath": "src/images/catalogo/nitto-blanca.jpeg"
+    },
+    {
+        "name": "toyotires-proxes",
+        "filePath": "src/images/catalogo/toyotires-proxes.jpeg"
+    },
+    {
+        "name": "yokohama-advan",
+        "filePath": "src/images/catalogo/Yokohama-advan.jpeg"
+    }
+]

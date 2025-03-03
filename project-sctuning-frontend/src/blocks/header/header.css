@@ -1,6 +1,6 @@
 @font-face {
     font-family: "HardRace";
-    src: url("../../font/Hard Race.otf") format("opentype");
+    src: url("../../font/HardRace.otf") format("opentype");
 }
 
 .header{
@@ -30,9 +30,10 @@
 }
 .header__title{
     margin: 0;
+    letter-spacing: 0.3rem;
     margin-left: 30%;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-family: "HardRace";
 }
 
