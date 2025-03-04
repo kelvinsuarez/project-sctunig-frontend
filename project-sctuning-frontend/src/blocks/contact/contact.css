@@ -1,0 +1,9 @@
+.contact{
+    width: 90%;
+    margin-top: 5%;
+    border: red 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: row;
+}

@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "HardRace";
+    src: url("../../../font/Hard\ Race.otf") format("opentype");
+}
+
+.contact__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: red 2px solid;
+    background-color: #727174;
+    width: 45%;
+    border-radius: 6%;
+}
+
+.contact__info-title{
+    font-family: "HardRace";
+    color: #9E0105;
+    font-size: 3rem;
+}
+
+.contact__info-text{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 5%;
+}
+
+.contact__info-social-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.contact__btn {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin: 5px;
+    transition: transform 0.2s;
+}
+
+.contact__btn:hover {
+    transform: scale(1.4); /* Efecto de zoom al pasar el ratón */
+  }

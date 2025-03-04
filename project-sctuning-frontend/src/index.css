@@ -10,3 +10,6 @@
 @import url(./blocks/home/__rueda/home__rueda.css);
 @import url(./blocks/home/__section-service/home__section-service.css);
 @import url(./blocks/infoSection/infoSection.css);
+@import url(./blocks/contact/contact.css);
+@import url(./blocks/contact/__fomr/contact__form.css);
+@import url(./blocks/contact/__info/contact__info.css);

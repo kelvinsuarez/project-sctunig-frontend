@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "HardRace";
+    src: url("../../../font/Hard\ Race.otf") format("opentype");
+}
+
+.contact__form{
+    border: red 2px solid;
+    background-color: #ffffff;
+    width: 45%;
+}

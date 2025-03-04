@@ -33,8 +33,8 @@ function InfoSection() {
             <h2 className="info-section__title">preguntas frecuentes</h2>
             <div className='info-section__embed' dangerouslySetInnerHTML={{__html: preguntasFrecuentesIframe}}></div>
         </div>
-        <div className="info-section__container-prueva">
-            <h2 className="info-section__title">Prueva de resistencia</h2>
+        <div className="info-section__container-prueba">
+            <h2 className="info-section__title">Prueba de resistencia</h2>
             <div className='info-section__embed' dangerouslySetInnerHTML={{__html: pruebaResistenciaIframe}}></div>
         </div>
     </div>
