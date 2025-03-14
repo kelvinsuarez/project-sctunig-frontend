@@ -1,11 +1,11 @@
 // import { IKImage } from 'imagekitio-react';
 // import PropTypes from 'prop-types';
 
-function CardImage ({ image }) {
+function CardImage ({ image, onClick }) {
     
     return(
         
-        <div className="image__element">
+        <div className="image__element" onClick={onClick}>
             <img src={image.filePath} alt={image.name} height={300} width={300}/>
             {/* <IKImage
                 className="image__element-pic"

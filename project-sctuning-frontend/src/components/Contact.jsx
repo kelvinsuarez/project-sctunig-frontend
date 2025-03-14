@@ -6,8 +6,9 @@ import whatsapp from "../images/social-network/Whatssap.png"
 function Contact() {    
     const [formData, setFormData] = useState({
         name: '',
-        email: '',
-        message: ''
+        marca: '',
+        color: '',
+        tamano: ''
     })
 
     const handleChange = (e) => {
@@ -20,6 +21,12 @@ function Contact() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        const {name, marca, color, tamano} = formData;
+        const message = `Hola, soy ${name} y estoy ineresado en hacer un pedido. Marca: ${marca}, color: ${color}, para gomas: ${tamano}.`;
+        const whatsappLink = `https://wa.me/18299356559?text=${encodeURIComponent(message)}`;
+
+        window.open(whatsappLink, '_blank')
     }
 
     return (
@@ -45,19 +52,36 @@ function Contact() {
             </div>
 
             <div className="contact__form">
-                <h2>Formulario de pedido</h2>
+                <h2 className="contact__form-title">Formulario de pedido</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="contact__form-group">
                         <label htmlFor="name">Nombre:</label>
-                        <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} required />
+                        <input type="text" id="name" name="name" value={formData.name} placeholder="Nombre de cliente" onChange={handleChange} required />
                     </div>
                     <div className="contact__form-group">
-                        <label htmlFor="email">Email:</label>
-                        <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} required />
+                        <label htmlFor="marca">Marca de kit a elegir:</label>
+                        <select id="marca" name="marca" value={formData.marca} placeholder="Ej: Michelin, Dunlop, etc." onChange={handleChange} required >
+                            <option value="" disabled>Selecciona una marca</option>
+                            <option value="Goodyear">Goodyear</option>
+                            <option value="Michelin">Michelin</option>
+                            <option value="Bridgestone">Bridgestone</option>
+                            <option value="Yokohama">Yokohama</option>
+                            <option value="Dunlop">Dunlop</option>
+                            <option value="Nitto">Nitto</option>
+                            <option value="Kumho">Kumho</option>
+                            <option value="Firehawk">Firehawk</option>
+                            <option value="Toyotires">Toyotires</option>
+                            <option value="Falken">Falken</option>
+                            <option value="Personalizada">Personalizada</option>
+                        </select>
                     </div>
                     <div className="contact__form-group">
-                        <label htmlFor="message">Datos del pedido:</label>
-                        <textarea id="message" name="message" value={formData.message} onChange={handleChange} required ></textarea>
+                        <label htmlFor="color">Color(es):</label>
+                        <input id="color" name="color" value={formData.color} onChange={handleChange} required ></input>
+                    </div>
+                    <div className="contact__form-group">
+                        <label htmlFor="tamano">Tamaño de goma:</label>
+                        <input id="tamno" name="tamano" value={formData.tamano} onChange={handleChange} required ></input>
                     </div>
                     <button type="submit" className="contact__btn-submit">Enviar</button>
                 </form>

@@ -19,17 +19,20 @@ function Gallery() {
       }
 
   return (
-    <div className="gallery">
-        {images.map((image) =>(
-            <CardImage
-                key={image.name}
-                image={image}
-                // urlEndpoint="https://ik.imagekit.io/o63q7txss"
-                // path={image.filePath}
-                // transformation={[{ height: 300, width: 300}]}
-            />
-        ))}
-    </div>
+    <>
+        <h2>Vehiculos de nuestros clientes</h2>
+        <div className="gallery">
+            {images.map((image) =>(
+                <CardImage
+                    key={image.name}
+                    image={image}
+                    // urlEndpoint="https://ik.imagekit.io/o63q7txss"
+                    // path={image.filePath}
+                    // transformation={[{ height: 300, width: 300}]}
+                />
+            ))}
+        </div>
+    </>
   );
 }
 

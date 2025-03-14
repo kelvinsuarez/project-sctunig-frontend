@@ -8,15 +8,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: red 2px solid;
     background-color: #727174;
-    width: 45%;
+    width: 50%;
     border-radius: 6%;
+    margin-top: -7.3%;
 }
 
 .contact__info-title{
     font-family: "HardRace";
-    color: #9E0105;
+    color:white;
     font-size: 3rem;
 }
 
@@ -31,7 +31,7 @@
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
-    width: 90%;
+    width: 60%;
     margin-bottom: 5%;
 }
 
