@@ -38,7 +38,7 @@ function Catalog() {
       <h2>Marcas disponibles</h2>
       <div className="catalog">
         {images.map((image) =>(
-            <CardImage
+            <CardImage className="catalog__img"
                 key={image.name}
                 image={image}
                 onClick={() => handleImageClick(image)}
