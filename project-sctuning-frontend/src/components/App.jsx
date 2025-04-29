@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import Catalog from './Catalog';
@@ -47,6 +47,7 @@ function App() {
   };
   
   return (
+  <BrowserRouter basename="/project-sctunig-frontend">
     <div className='App'>
       <div className='root'>
         <Header/>
@@ -67,6 +68,7 @@ function App() {
         <Footer/>
       </div>
     </div>
+  </BrowserRouter> 
   )
 }
 
