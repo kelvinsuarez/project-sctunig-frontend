@@ -6,7 +6,7 @@ import App from './components/App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename="/project-sctunig-frontend">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </StrictMode>,
