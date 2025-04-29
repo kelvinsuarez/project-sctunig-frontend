@@ -3,15 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://kelvinsuarez.github.io/project-sctunig-frontend",
+  "homepage": "",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "start": "vite"
   },
   "dependencies": {
     "firebase": "^11.2.0",
