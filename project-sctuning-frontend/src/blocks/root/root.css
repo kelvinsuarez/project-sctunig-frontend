@@ -7,7 +7,7 @@
 .root{
     background-color: black;
     background-image: url('../../images/background.png');
-    background-size:calc(70%);
+    background-size:cover;
     background-position:center 80%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -21,4 +21,11 @@
     flex-wrap: wrap;
     position: relative;
     
+}
+
+@media (max-width: 768px) {
+    .root{
+        background-size: contain;
+        background-position: center top;
+    }
 }
