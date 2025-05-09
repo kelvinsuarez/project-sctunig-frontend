@@ -55,14 +55,15 @@
 @media screen and (max-width: 768px) {
     .home__baner{
         width: 90%;
-        height: 800px;
+        height: 870px;
         background-size: cover;
     }
     .home__baner-container-vertical {
         width: 90%;
         text-align: center;
         padding: 10px;
-        height: 25%;
+        height: 27%;
+        margin-top: 0px;
     }
     .home__baner-container-horizontal{
         width: 40%;

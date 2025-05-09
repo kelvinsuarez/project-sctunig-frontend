@@ -37,13 +37,17 @@
 
 @media screen and (max-width: 768px) {
     .home__container-rueda{
+        border: red solid 1px;
         margin-bottom: 100px;
+        width: 60%;
     }
     .home__base-rueda{
+        border: red solid 1px;
         height: 66vh;
         top:91%
     }
     .home__rueda{
         top: -10%;
+        border: red solid 1px;
     }
 }
