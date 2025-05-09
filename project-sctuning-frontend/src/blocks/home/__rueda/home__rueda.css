@@ -34,3 +34,16 @@
     animation:  rotacion 20s linear infinite;
     overflow: hidden;
 }
+
+@media screen and (max-width: 768px) {
+    .home__container-rueda{
+        margin-bottom: 100px;
+    }
+    .home__base-rueda{
+        height: 66vh;
+        top:91%
+    }
+    .home__rueda{
+        top: -10%;
+    }
+}

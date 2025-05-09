@@ -52,3 +52,34 @@
     font-size: 1.2rem;
     width: 90%;
 }
+@media screen and (max-width: 768px) {
+    .home__baner{
+        width: 90%;
+        height: 800px;
+        background-size: cover;
+    }
+    .home__baner-container-vertical {
+        width: 90%;
+        text-align: center;
+        padding: 10px;
+        height: 25%;
+    }
+    .home__baner-container-horizontal{
+        width: 40%;
+        text-align: center;
+        padding-top: 5%;
+        height: 45%;
+        margin-left: 55.5%;
+    }
+    .home__baner-text{
+        font-size: 1.5rem;
+        width: 90%;
+        margin-top: 0%;
+    }
+    .home__baner-title{
+        font-size: 1.5rem;
+        letter-spacing: 0.15rem;
+        width: 80%;
+        text-align: center;
+    }
+}

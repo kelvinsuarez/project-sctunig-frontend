@@ -45,3 +45,17 @@
    color: white;
    transform: scale(1.1);
 }
+
+@media screen and (max-width: 768px) {
+    .home__section-service{
+        width: 90%;
+    }
+
+    .home__section-service-title{
+        font-size: 1.9rem;
+        
+    }
+    .home__section-service-text{
+        font-size: 1.5rem;
+    }
+}
