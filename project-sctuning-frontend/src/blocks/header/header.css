@@ -72,3 +72,39 @@ nav{
     border-top: 2px solid #9E0105;
     border-right: 2px solid #9E0105;
 }
+
+@media screen and (max-width: 768px) {
+    .header{
+        margin-top: 35px;
+        width: 95%;
+    }
+
+    .header__logo{
+        height: 40px;
+    }
+    .header__title{
+        letter-spacing: 0.3rem;
+        margin-left: 5%;
+        text-align: center;
+        font-size: 2.4rem;
+    }
+    .header__subtitle{
+        margin-left: 5%;
+    }
+    .nav{
+        position: relative;
+        left: 0px;
+        height: auto;
+        bottom: 0px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .nav ul{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-content: center;
+        padding: 0;
+    }
+}

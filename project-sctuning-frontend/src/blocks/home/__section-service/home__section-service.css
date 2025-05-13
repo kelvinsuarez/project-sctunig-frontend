@@ -48,13 +48,13 @@
 
 @media screen and (max-width: 768px) {
     .home__section-service{
-        width: 90%;
+        width: 95%;
     }
 
     .home__section-service-title{
         font-size: 1.9rem;
     }
     .home__section-service-text{
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 }
