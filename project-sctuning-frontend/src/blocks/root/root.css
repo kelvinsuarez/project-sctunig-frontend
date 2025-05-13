@@ -11,7 +11,8 @@
     background-position:center 80%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-width: 1280px;
+    width: 100%;
+    max-width: 100vw;
     margin: auto;
     font-family: "Roboto";
     color:white;
@@ -25,7 +26,7 @@
 
 @media (max-width: 768px) {
     .root{
-        background-size: contain;
-        background-position: center top;
+        background-size: cover;
+        background-position: center;
     }
 }
