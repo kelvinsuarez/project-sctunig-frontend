@@ -39,3 +39,10 @@ body, html {
         background-position: center;
     }
 }
+
+@media screen and (max-width: 360px) { 
+    .root{
+        background-size: cover;
+        background-position: center;
+    }
+}

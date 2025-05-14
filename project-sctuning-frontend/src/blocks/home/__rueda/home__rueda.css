@@ -52,12 +52,15 @@
 
 @media screen and (max-width: 395px) {
     .home__container-rueda{
+        margin-bottom: 0px;
         margin-top: 90px;
     }
     .home__base-rueda{
-        height: 73vh;
-        top:92.5%;
+        height: 65vh;
+        top:95.8%;
         width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .home__rueda{
