@@ -92,7 +92,7 @@
     }
 }
 
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 415px) {
     .home__baner {
     background-size: cover;
     background-position: center;
