@@ -49,3 +49,21 @@
         top: -15%;
     }
 }
+
+@media screen and (max-width: 395px) {
+    .home__container-rueda{
+        margin-top: 90px;
+    }
+    .home__base-rueda{
+        height: 73vh;
+        top:92.5%;
+        width: 100%;
+    }
+
+    .home__rueda{
+    bottom: -100px;
+    left: -250px;
+    width: 900px;
+    top: -11%;
+}
+}

@@ -58,3 +58,10 @@
         font-size: 1.3rem;
     }
 }
+
+@media screen and (max-width: 395px) {
+    .home__section-service{
+        width: 99%;
+        margin-top: 8%;
+    }
+}

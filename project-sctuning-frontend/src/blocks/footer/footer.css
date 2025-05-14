@@ -30,3 +30,19 @@
         line-height: 18px;
     }
 }
+
+@media screen and (max-width: 395px) {
+    .footer{
+        position: relative;
+        bottom: 135px;
+        padding-bottom: 10%;
+        margin-top: -90px;
+        margin-left: 22%;
+        height: 25%;
+    }
+    .footer__text{
+        margin-left: 25%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

@@ -9,10 +9,10 @@ function Home() {
         <div className="home__baner-container-vertical">
           <h1 className="home__baner-title">Destaca en las calles</h1>
           <p className="home__baner-text">
-            Dale a tu vehiculo ese toque deportivo extra con nuestros kit de lestras para llantas
+            Dale a tu vehículo ese toque deportivo extra con nuestros kits de letras para llantas.
           </p>
-          <p className="home__baner-text">
-            puedes elegir entre una gran varidad de marcas estandarizadas en tus colores preferidos para que tus llantas luscan
+          <p className="home__baner-text home__baner-text_plus">
+            Puedes elegir entre una gran varidad de marcas estandarizadas en tus colores preferidos para que tus llantas luzcan
             originales y deportivas o tambien puedes optar por un diseño personalizado de tu elección.
           </p>
         </div>
@@ -21,7 +21,7 @@ function Home() {
             Siempre  nos complace formar parte de esos magníficos proyectos que son tan especiales para sus dueños,
             por eso anímate y contáctanos para ayudarte a elegir ese diseño que sacará el mejor
             potencial visual de tu vehículo, sea carro, moto, etc. Así que si estas finalizando tu proyecto o simplemente
-            eres amante de andar en un auto que luzca bien, te esperamos
+            eres amante de andar en un auto que luzca bien, te esperamos.
           </p>
         </div>
       </div>
@@ -53,7 +53,7 @@ function Home() {
           <li className="home__section-service-text">
             <h3>Delivery y envios nacionales:</h3>
             <p>
-              Puedes pedir tu kit de lestras a domicilio en Santo Domingo, por un costo 
+              Puedes pedir tu kit de letras a domicilio en Santo Domingo, por un costo 
               adicional a pagar dependiendo de la distancia y el pago se realiza 
               contra entrega. Tambien hacemos envios al interior pero en este modo se debe
               realizar el pago previo y suministrarnos sus datos pra luego proceder con el envio. 
@@ -72,7 +72,7 @@ function Home() {
             <h3>Asesoria</h3>
             <p>
               Si tienes dudas y no sabes que le quedaria mejor, contactanos y en
-              base los datos (vehiculo, color, numeración de llantas) te recomendamos 
+              base los datos (vehículo, color, numeración de llantas) te recomendamos 
               la mejor opción en base a nuetra gran experiencia y te mostramos semejansas
               obtenidas de nuestra galería con imagenes reales de los vehículos de nuestros 
               clientes.
