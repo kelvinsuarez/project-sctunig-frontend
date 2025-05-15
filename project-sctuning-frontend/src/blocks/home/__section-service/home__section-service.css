@@ -59,7 +59,7 @@
     }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 480px) {
     .home__section-service{
         width: 99%;
         margin-top: 8%;

@@ -12,15 +12,15 @@ function Home() {
             Dale a tu vehículo ese toque deportivo extra con nuestros kits de letras para llantas.
           </p>
           <p className="home__baner-text home__baner-text_plus">
-            Puedes elegir entre una gran varidad de marcas estandarizadas en tus colores preferidos para que tus llantas luzcan
-            originales y deportivas o tambien puedes optar por un diseño personalizado de tu elección.
+            Puedes elegir entre una gran variedad de marcas estandarizadas en tus colores preferidos para que tus llantas luzcan
+            originales y deportivas, o también puedes optar por un diseño personalizado de tu elección.
           </p>
         </div>
         <div className="home__baner-container-horizontal">
           <p className="home__baner-text">
             Siempre  nos complace formar parte de esos magníficos proyectos que son tan especiales para sus dueños,
-            por eso anímate y contáctanos para ayudarte a elegir ese diseño que sacará el mejor
-            potencial visual de tu vehículo, sea carro, moto, etc. Así que si estas finalizando tu proyecto o simplemente
+            por eso, anímate y contáctanos para ayudarte a elegir ese diseño que sacará el mejor
+            potencial visual de tu vehículo, ya sea carro, moto, etc. Así que si está finalizando tu proyecto o simplemente
             eres amante de andar en un auto que luzca bien, te esperamos.
           </p>
         </div>
@@ -33,48 +33,48 @@ function Home() {
             <p>
               Incluye la cantidad de letras para 4 lados,
               en carros se distribuye en el lado visible de cada 
-              neumatico, y en moto en los 2 lados de los
-              2 neumaticos.
+              neumático, y en moto, en los 2 lados de los
+              2 neumáticos.
             </p>
             <p>
               También incluye la cantidad de pegamento necesario, y si es tu primera
-              vez instalandolas te enviamos nuestro video tutorial con las recomendaciones
+              vez instalándolas te enviamos nuestro video tutorial con las recomendaciones
               para colocar perfectamente nuestras letras en tus llantas.
             </p>
           </li>
           <li className="home__section-service-text">
             <h3>Instalación:</h3>
             <p>
-              Ofrecemos el servicio de isntalación en caso de que no tengas el 
-              tiempo para dedicarlo en eso, o simplemente estas consado te las
+              Ofrecemos el servicio de instalación en caso de que no tengas el 
+              tiempo para dedicarlo en eso, o simplemente estés cansado te las
               instalamos por un costo adicional. 
             </p>
           </li>
           <li className="home__section-service-text">
-            <h3>Delivery y envios nacionales:</h3>
+            <h3>Delivery y envíos nacionales:</h3>
             <p>
               Puedes pedir tu kit de letras a domicilio en Santo Domingo, por un costo 
               adicional a pagar dependiendo de la distancia y el pago se realiza 
-              contra entrega. Tambien hacemos envios al interior pero en este modo se debe
-              realizar el pago previo y suministrarnos sus datos pra luego proceder con el envio. 
+              contra entrega. También hacemos envíos al interior pero en este modo se debe
+              realizar el pago previo y suministrarnos sus datos para luego proceder con el envío. 
             </p>
           </li>
           <li className="home__section-service-text">
             <h3>Diseños personalizados</h3>
             <p>
-              A demas de la amplia gama de marcas deportivas famosas, tambien puedes optar por 
+              Además de la amplia gama de marcas deportivas famosas, también puedes optar por 
               un diseño personalizado, solo cuentanos tu idea o frase a colocar y procedemos a
-              enviarte una imagen de tu diseño montado en la llanta, (nota: Ya para la elaboracion 
-              de tu diseño, debe realizar el pago del 50% por adelantado)
+              enviarte una imagen de tu diseño montado en la llanta, (nota: Para la elaboración 
+              de tu diseño, debes realizar el pago del 50% por adelantado)
             </p>
           </li>
           <li className="home__section-service-text">
-            <h3>Asesoria</h3>
+            <h3>Asesoría</h3>
             <p>
-              Si tienes dudas y no sabes que le quedaria mejor, contactanos y en
-              base los datos (vehículo, color, numeración de llantas) te recomendamos 
-              la mejor opción en base a nuetra gran experiencia y te mostramos semejansas
-              obtenidas de nuestra galería con imagenes reales de los vehículos de nuestros 
+              Si tienes dudas y no sabes qué le quedaría mejor, contáctanos y, en
+              base a los datos (vehículo, color, numeración de llantas) te recomendamos 
+              la mejor opción basándonos en nuestra gran experiencia y te mostramos semejanzas
+              obtenidas de nuestra galería con imágenes reales de los vehículos de nuestros 
               clientes.
             </p>
           </li>

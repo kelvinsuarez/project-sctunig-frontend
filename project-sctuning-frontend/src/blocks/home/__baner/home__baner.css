@@ -92,7 +92,7 @@
     }
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 480px) {
     .home__baner {
     background-size: cover;
     background-position: center;
@@ -118,7 +118,7 @@
     .home__baner-container-horizontal{
         width: 97%;
         height: 30%;
-        margin-top: 110%;
+        margin-top: 100%;
         padding-left: 3%;
         padding-right: 0%;
     }
