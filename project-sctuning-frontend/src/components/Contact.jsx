@@ -34,15 +34,15 @@ function Contact() {
             <div className="contact__info">
                 <h2 className="contact__info-title">Vias de contacto</h2>
                 <p className="contact__info-text">
-                    Somos tienda virtual ofrecemos productos asequibles y de calidad, y un servicio 
-                    personalizado para cada uno de nuestros clientes. Hacemos envios a domicilio en 
-                    Santo Domingo, al interior por vimempack y tambien despachamos desde nuestro 
-                    almacen luego del cliente haber elegido su producto para evitarles costo de envio.
+                    Somos tienda virtual ofrecemos productos asequibles y de calidad, además un servicio 
+                    personalizado para cada uno de nuestros clientes. Hacemos envíos a domicilio en 
+                    Santo Domingo, al interior a través de Vimempack y también despachamos desde nuestro 
+                    almacén luego del cliente haber elegido su producto para evitarle costo de envío.
                 </p>
                 <p className="contact__info-text">
-                    Tambien, si no quieres instalar tú mismo el kit de letras,
+                    También, si no quieres instalar tú mismo el kit de letras,
                     puedes agendar cita previa para solicitar servicio de instalación con costo adicional. 
-                    Contactanos y siguenos en nuestras redes sociales:
+                    Contáctanos y síguenos en nuestras redes sociales:
                 </p>
                 <div className="contact__info-social-buttons">
                     <a href="https://www.instagram.com/sctuning_rd/" target="_blank" rel="noopener noreferrer" ><img className="contact__btn" src={instagram}/></a>
