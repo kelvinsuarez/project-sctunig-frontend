@@ -43,6 +43,7 @@ body, html {
 @media screen and (max-width: 480px) { 
     .root{
         background-size: cover;
+        display: flex;
         background-position: center;
     }
 }

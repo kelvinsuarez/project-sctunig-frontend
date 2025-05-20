@@ -18,7 +18,6 @@
 .info-section__container-preguntas{
     grid-row: span 2;
     grid-column: span 2;
-    border-radius: 3%;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -55,8 +54,41 @@
     justify-content: center;
   }
 
-  @media (max-width: 600px) {
-    .info-section {
+  
+  @media screen and (max-width: 480px) {
+    .info-section{
+      width: 100%;
       grid-template-columns: 1fr;
+      align-items: stretch;
+      align-items: flex-start;
+      margin-left: -10px;
+      margin-bottom: 15%;
     }
-  }  
+
+    .info-section__container-instalacion,
+    .info-section__container-caucho,
+    .info-section__container-prueba,
+    .info-section__container-preguntas{
+     
+      margin-left: 0;
+      margin-right: 20%;
+      border-radius: 0;
+      padding: 0;
+      display: flex;
+      width: 100%;
+      margin-left: -9px;
+      height: 470px;
+  }
+
+    .info-section__title{
+      font-size: 1.5rem;
+      text-align: center;
+      width: 100%;
+      letter-spacing: 2px;
+    }
+
+    .info-section__embed {
+      border-radius: 0;
+    }
+
+  }

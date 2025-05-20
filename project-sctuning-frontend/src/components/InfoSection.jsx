@@ -22,7 +22,7 @@ function InfoSection() {
   return (
     <div className="info-section">
         <div className="info-section__container-instalacion">
-            <h2 className="info-section__title">Tutorial instalacion</h2>
+            <h2 className="info-section__title">Tutorial instalación</h2>
             <div className="info-section__embed" dangerouslySetInnerHTML={{ __html: youtubeIframe }}></div>
         </div>
         <div className="info-section__container-caucho">
