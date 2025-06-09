@@ -26,7 +26,7 @@ function Catalog() {
   };
   
   const handleViewGallery = (name) => {
-    const brandKeyword = name.split("-"[0]);
+    const brandKeyword = name.split("-")[0];
     window.location.href =`/gallery?marca=${encodeURIComponent(brandKeyword)}`
   };
 
