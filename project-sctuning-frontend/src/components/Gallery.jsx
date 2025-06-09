@@ -10,7 +10,11 @@ function Gallery() {
     const sliderInterval = useRef(null);
     
     useEffect(() => {
-        setImages([imagesData[imagesData.length - 1], ...imagesData, imagesData[0]]);
+        const initilImages = [imagesData[imagesData.length -1], ...imagesData.slice(0, 10), imagesData[0]]
+        setImages(initilImages);
+        setTimeout(() => {
+            setImages([imagesData[imagesData.length -1], ...imagesData, imagesData[0]])
+        }, 3000)
     }, []);
 
     const handleTransitionEnd= () => {
@@ -71,6 +75,7 @@ function Gallery() {
                             src={image.filePath}
                             alt={image.name}
                             className="gallery__carousel-image"
+                            loading="lazy"
                         />
                     ))}
                 </div>
