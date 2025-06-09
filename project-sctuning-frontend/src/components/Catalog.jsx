@@ -26,7 +26,8 @@ function Catalog() {
   };
   
   const handleViewGallery = (name) => {
-    console.log(`Ver modelos en galeria para la marca: ${name} `)
+    const brandKeyword = name.split("-"[0]);
+    window.location.href =`/gallery?marca=${encodeURIComponent(brandKeyword)}`
   };
 
   if (!images || images.length === 0) {

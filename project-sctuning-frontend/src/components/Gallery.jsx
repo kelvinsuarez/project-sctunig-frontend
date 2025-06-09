@@ -1,21 +1,31 @@
 
 import { useEffect, useState, useRef } from "react";
+import { useLocation } from "react-router-dom";
 import imagesData from "../images.json"
 
 
 function Gallery() {
+    const location = useLocation();
+    const params = new URLSearchParams(location.search);
+    const selectedBrand = params.get("marca");
+
     const [images, setImages] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(1);
     const trackRef = useRef(null);
     const sliderInterval = useRef(null);
     
     useEffect(() => {
-        const initilImages = [imagesData[imagesData.length -1], ...imagesData.slice(0, 10), imagesData[0]]
+        let filteredImages = imagesData;
+
+        if (selectedBrand) {
+            filteredImages = imagesData.filter(image => image.name.includes(selectedBrand));
+        }
+        const initilImages = [filteredImages[filteredImages.length -1], ...filteredImages.slice(0, 10), filteredImages[0]]
         setImages(initilImages);
         setTimeout(() => {
-            setImages([imagesData[imagesData.length -1], ...imagesData, imagesData[0]])
+            setImages([filteredImages[filteredImages.length -1], ...filteredImages, filteredImages[0]])
         }, 3000)
-    }, []);
+    }, [selectedBrand]);
 
     const handleTransitionEnd= () => {
         if (currentIndex === 0) {
