@@ -99,7 +99,7 @@
     },
     {
         "name": "michelin_2",
-        "filePath": "galeria-carros/goodyear_1.jpg"
+        "filePath": "galeria-carros/michelin_2.jpg"
     },
 
     {
@@ -228,5 +228,51 @@
     {
         "name": "yokohama_4",
         "filePath": "galeria-carros/yokohama_4.jpg"
+    },
+    {
+        "name": "personalizado_1",
+        "filePath": "galeria-carros/personalizado_1.jpg"
+    },
+    {
+        "name": "personalizado_2",
+        "filePath": "galeria-carros/personalizado_2.jpg"
+    },
+
+    {
+        "name": "personalizado_3",
+        "filePath": "galeria-carros/personalizado_3.jpg"
+    },
+    {
+        "name": "personalizado_4",
+        "filePath": "galeria-carros/personalizado_4.jpg"
+    },
+    {
+        "name": "personalizado_5",
+        "filePath": "galeria-carros/personalizado_5.jpg"
+    },
+    {
+        "name": "personalizado_6",
+        "filePath": "galeria-carros/personalizado_6.jpg"
+    },
+    {
+        "name": "personalizado_7",
+        "filePath": "galeria-carros/personalizado_7.jpg"
+    },
+    {
+        "name": "personalizado_8",
+        "filePath": "galeria-carros/personalizado_8.jpg"
+    },
+    {
+        "name": "personalizado_9",
+        "filePath": "galeria-carros/personalizado_9.jpg"
+    },
+
+    {
+        "name": "personalizado_10",
+        "filePath": "galeria-carros/personalizado_10.jpg"
+    },
+    {
+        "name": "personalizado_11",
+        "filePath": "galeria-carros/personalizado_11.jpg"
     }
 ]

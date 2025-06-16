@@ -47,5 +47,9 @@
     {
         "name": "yokohama-advan",
         "filePath": "catalogo/Yokohama-advan.jpeg"
+    },
+    {
+        "name": "personalizado",
+        "filePath": "catalogo/personalizado.jpg"
     }
 ]
