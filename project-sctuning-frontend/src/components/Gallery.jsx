@@ -30,23 +30,24 @@ function Gallery() {
     const handleTransitionEnd= () => {
         if (currentIndex === 0) {
             trackRef.current.style.transition = "none";
-            setCurrentIndex(imagesData.length);
-            trackRef.current.style.transform = `translateX(-${imagesData.length * 100}%)`;
+            setCurrentIndex(images.length - 2);
+            trackRef.current.style.transform = `translateX(-${(images.length - 2) * 100}%)`;
         } else if (currentIndex === images.length - 1) {
             trackRef.current.style.transition = "none";
             setCurrentIndex(1);
-            trackRef.current.style.transform = `tranlateX(-100%)`;
+            trackRef.current.style.transform = `translateX(-100%)`;
         }
     };
 
     const startSliding = (direction) => {
         stopSliding();
         sliderInterval.current = setInterval(() => {
-            setCurrentIndex((prevIndex) =>
-                direction === "next"? prevIndex + 1 : prevIndex -1
-            );
-            trackRef.current.style.transition = "transform 1.5s ease-in-out";
-            trackRef.current.style.transform = `translateX(-${(currentIndex + (direction === "next"? 1 : -1)) * 100}%)`;
+            setCurrentIndex((prevIndex) =>{
+                const newIndex = direction === "next" ? prevIndex + 1 : prevIndex -1;
+                trackRef.current.style.transition = "transform 1.5s ease-in-out";
+                trackRef.current.style.transform = `translateX(-${newIndex * 100}%)`;
+                return newIndex;
+            });
         }, 2000);
     };
 

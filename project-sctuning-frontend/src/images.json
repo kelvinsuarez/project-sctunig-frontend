@@ -16,6 +16,10 @@
         "filePath": "galeria-carros/bridgestone_4.jpg"
     },
     {
+        "name": "bridgestone_5",
+        "filePath": "galeria-carros/bridgestone_5.jpg"
+    },
+    {
         "name": "dunlop_1",
         "filePath": "galeria-carros/dunlop_1.jpg"
     },
@@ -35,6 +39,10 @@
     {
         "name": "dunlop_5",
         "filePath": "galeria-carros/dunlop_5.jpg"
+    },
+    {
+        "name": "dunlop_6",
+        "filePath": "galeria-carros/dunlop_6.jpg"
     },
     {
         "name": "falken_1",
@@ -70,6 +78,10 @@
         "filePath": "galeria-carros/goodyear_4.jpg"
     },
     {
+        "name": "goodyear_5",
+        "filePath": "galeria-carros/goodyear_5.jpg"
+    },
+    {
         "name": "kumho_1",
         "filePath": "galeria-carros/kumho_1.jpg"
     },
@@ -92,6 +104,10 @@
     {
         "name": "kumho_6",
         "filePath": "galeria-carros/kumho_6.jpg"
+    },
+    {
+        "name": "kumho_7",
+        "filePath": "galeria-carros/kumho_7.jpg"
     },
     {
         "name": "michelin_1",
@@ -197,6 +213,10 @@
         "filePath": "galeria-carros/nitto_9.jpg"
     },
     {
+        "name": "nitto_10",
+        "filePath": "galeria-carros/nitto_10.jpg"
+    },
+    {
         "name": "toyotires_1",
         "filePath": "galeria-carros/toyotires_1.jpg"
     },
@@ -212,6 +232,14 @@
     {
         "name": "toyotires_4",
         "filePath": "galeria-carros/toyotires_4.jpg"
+    },
+    {
+        "name": "toyotires_5",
+        "filePath": "galeria-carros/toyotires_5.jpg"
+    },
+    {
+        "name": "toyotires_6",
+        "filePath": "galeria-carros/toyotires_6.jpg"
     },
     {
         "name": "yokohama_1",
