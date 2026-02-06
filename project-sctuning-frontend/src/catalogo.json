@@ -1,55 +1,55 @@
 [
     {
         "name": "michelin",
-        "filePath": "/catalogo/michelin.jpeg"
+        "filePath": "michelin.jpeg"
     },
     {
         "name": "bridgestone-potenza",
-        "filePath": "catalogo/bridgestone-potenza.jpeg"
+        "filePath": "bridgestone-potenza.jpeg"
     },
     {
         "name": "dunlop",
-        "filePath": "catalogo/dunlop.jpeg"
+        "filePath": "dunlop.jpeg"
     },
     {
         "name": "falken-amarilla",
-        "filePath": "catalogo/falken-amarilla.jpeg"
+        "filePath": "falken-amarilla.jpeg"
     },
     {
 
         "name": "falken-blanca",
-        "filePath": "catalogo/falken-blanca.jpeg"
+        "filePath": "falken-blanca.jpeg"
     },
     {
         "name": "firehawk-indySOO",
-        "filePath": "catalogo/firehauwk-indy500.jpeg"
+        "filePath": "firehauwk-indy500.jpeg"
     },
     {
         "name": "goodyear",
-        "filePath": "catalogo/good-year.jpeg"
+        "filePath": "good-year.jpeg"
     },
     {
         "name": "kumho",
-        "filePath": "catalogo/kumho.jpeg"
+        "filePath": "kumho.jpeg"
     },
     {
         "name": "nitto-amarilla",
-        "filePath": "catalogo/nitto-amarilla.jpeg"
+        "filePath": "nitto-amarilla.jpeg"
     },
     {
         "name": "nitto-blanca",
-        "filePath": "catalogo/nitto-blanca.jpeg"
+        "filePath": "nitto-blanca.jpeg"
     },
     {
         "name": "toyotires-proxes",
-        "filePath": "catalogo/toyotires-proxes.jpeg"
+        "filePath": "toyotires-proxes.jpeg"
     },
     {
         "name": "yokohama-advan",
-        "filePath": "catalogo/Yokohama-advan.jpeg"
+        "filePath": "Yokohama-advan.jpeg"
     },
     {
         "name": "personalizado",
-        "filePath": "catalogo/personalizado.jpg"
+        "filePath": "personalizado.jpg"
     }
 ]

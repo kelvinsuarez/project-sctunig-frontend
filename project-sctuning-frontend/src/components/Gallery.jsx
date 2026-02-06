@@ -1,7 +1,8 @@
 
 import { useEffect, useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import imagesData from "../images.json"
+import imagesData from "../images.json";
+import { getImageUrl } from "../utils/imageSource";
 
 
 function Gallery() {
@@ -80,15 +81,21 @@ function Gallery() {
                     }}
                     onTransitionEnd={handleTransitionEnd}
                 >
-                    {images.map((image, index) => (
+                    {images.map((image, index) => {
+                        const { imagekitUrl, publicUrl } = getImageUrl(image.filePath, "gallery")
+                        return (
                         <img
                             key = {index}
-                            src={image.filePath}
+                            src={imagekitUrl}
                             alt={image.name}
                             className="gallery__carousel-image"
                             loading="lazy"
+                            onError={(e) => {
+                                e.target.src = publicUrl
+                            }}
                         />
-                    ))}
+                        )
+                    })}
                 </div>
             </div>
             <button

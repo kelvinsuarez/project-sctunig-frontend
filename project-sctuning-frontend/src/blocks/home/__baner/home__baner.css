@@ -1,6 +1,7 @@
 @font-face {
-    font-family: "HardRace";
-    src: url("../../../font/Hard\ Race.otf") format("opentype");
+    font-family: "Hard Race";
+    src: url("../../../font/HardRace.woff") format("opentype"),
+         url("../../../font/HardRace.woff2");
 }
 
 .home__baner{
@@ -41,7 +42,7 @@
 }
 
 .home__baner-title{
-    font-family: "HardRace";
+    font-family: "Hard Race";
     font-size: 1.2rem;
     letter-spacing: 0.15rem;
     width: 80%;

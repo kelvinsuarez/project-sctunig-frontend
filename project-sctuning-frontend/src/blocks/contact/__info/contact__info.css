@@ -1,6 +1,7 @@
 @font-face {
-    font-family: "HardRace";
-    src: url("../../../font/Hard\ Race.otf") format("opentype");
+    font-family: "Hard Race";
+    src: url("../../../font/HardRace.woff2"),
+         url("../../../font/HardRace.woff");
 }
 
 .contact__info{
@@ -15,7 +16,7 @@
 }
 
 .contact__info-title{
-    font-family: "HardRace";
+    font-family: "Hard Race";
     color:white;
     font-size: 3rem;
 }
