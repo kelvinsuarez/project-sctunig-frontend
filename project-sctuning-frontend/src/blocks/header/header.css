@@ -1,10 +1,6 @@
 @font-face {
-    font-family: 'Hard Race';
-    src: url('../../font/HardRace.woff2') format('woff2'),
-        url('../../font/HardRace.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+    font-family: "HardRace";
+    src: url("../../font/HardRace.otf") format("opentype");
 }
 .header{
     margin-top: 45px;
@@ -37,7 +33,7 @@
     margin-left: 30%;
     text-align: center;
     font-size: 2.2rem;
-    font-family: "Hard Race";
+    font-family: "HardRace";
 }
 
 .header__subtitle{

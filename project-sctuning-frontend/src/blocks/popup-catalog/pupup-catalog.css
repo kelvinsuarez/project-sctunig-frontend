@@ -1,7 +1,6 @@
 @font-face {
-    font-family: "Hard Race";
-    src: url("../../../src/font/HardRace.woff2") format("opentype"),
-         url("../../../src/font/HardRace.woff");
+    font-family: "HardRace";
+    src: url("../../font/HardRace.otf") format("opentype");
 }
 
 
@@ -49,7 +48,7 @@
 }
 
 .popup-catalog__title{
-    font-family: "Hard Race";
+    font-family: "HardRace";
     font-size: 2rem;
     color: white;
     text-align: center;

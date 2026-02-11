@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "Hard Race";
-  src: url("../../../src/font/HardRace.woff2") format("opentype"),
-       url("../../../src/font/HardRace.woff") format("woff");
+    font-family: "HardRace";
+    src: url("../../font/HardRace.otf") format("opentype");
 }
 
 .info-section{
@@ -38,7 +37,7 @@
 
 .info-section__title {
   font-size: 2rem;
-  font-family: "Hard Race";
+  font-family: "HardRace";
   margin-bottom: 20px;
   text-align: center;
 }

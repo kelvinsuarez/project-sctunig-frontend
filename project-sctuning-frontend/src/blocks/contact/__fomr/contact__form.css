@@ -1,7 +1,6 @@
 @font-face {
-    font-family: "Hard Race";
-    src: url("../../../font/HardRace.woff2"),
-         url("../../../font/HardRace.woff");
+    font-family: "HardRace";
+    src: url("../../../font/HardRace.otf") format("opentype");
 }
 
 .contact__form{
@@ -17,7 +16,7 @@
 
 .contact__form-title{
     width: 90%;
-    font-family: "Hard Race";
+    font-family: "HardRace";
     text-align: center;
     color:white;
     font-size: 3rem;
