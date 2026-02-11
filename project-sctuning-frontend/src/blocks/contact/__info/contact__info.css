@@ -11,13 +11,14 @@
     background-color: #727174;
     width: 50%;
     border-radius: 6%;
-    margin-top: -7.3%;
+    padding-bottom: 5%;
 }
 
 .contact__info-title{
     font-family: "HardRace";
     color:white;
-    font-size: 3rem;
+    font-size: 4vw;
+    text-align: center;
 }
 
 .contact__info-text{

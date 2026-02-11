@@ -52,7 +52,7 @@ function Catalog() {
       {selectedImage && (
         <PopupCatalog isOpen={!!selectedImage} onClose={handleCloseModal}>
           <h2 className="popup-catalog__title">{selectedImage.name}</h2>
-          <img src={selectedImage.filePath} alt={selectedImage.name} className="popup-catalog__image" />
+          <CardImage image={selectedImage} alt={selectedImage.name} className="popup-catalog__image" onClick={() => {}}/>
           <button className="popup-catalog__btn-buy" onClick={() => handleMakeOrder(selectedImage.name)}>Hacer Pedido</button>
           <button className="popup-catalog__btn-view" onClick={() => handleViewGallery(selectedImage.name)}>Ver Modelos en Galería</button>
         </PopupCatalog>

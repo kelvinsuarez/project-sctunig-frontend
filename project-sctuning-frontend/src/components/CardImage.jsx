@@ -3,12 +3,12 @@
 import PropTypes from 'prop-types';
 import { getImageUrl } from "../utils/imageSource";
 
-function CardImage ({ image, onClick }) {
+function CardImage ({ image, onClick, alt }) {
     const { imagekitUrl, publicUrl } = getImageUrl(image.filePath, "catalogo");
     return(
         
         <div className="image__element" onClick={onClick}>
-            <img src={imagekitUrl} alt={image.name} height={300} width={300} onError={(e) => {
+            <img src={imagekitUrl} alt={alt || image.name} height={300} width={300} onError={(e) => {
           e.target.src = publicUrl; // fallback si ImageKit falla
         }}
 />
@@ -32,4 +32,5 @@ CardImage.propTypes = {
         name: PropTypes.string.isRequired,
     }).isRequired,
     onClick: PropTypes.func.isRequired,
+    alt: PropTypes.string,
 };
