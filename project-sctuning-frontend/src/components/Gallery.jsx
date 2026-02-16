@@ -1,8 +1,6 @@
 
 import { useEffect, useState, useRef } from "react";
 import { useLocation } from "react-router-dom";
-import imagesData from "../images.json";
-import { getImageUrl } from "../utils/imageSource";
 
 
 function Gallery() {
@@ -16,16 +14,36 @@ function Gallery() {
     const sliderInterval = useRef(null);
     
     useEffect(() => {
-        let filteredImages = imagesData;
+        async function fetchImages() {
+            try {
+                const response = await fetch("/.netlify/functions/getGalleryImages");
+                const data = await response.json();
+                console.log("Images received in Gallery:", data);
 
-        if (selectedBrand) {
-            filteredImages = imagesData.filter(image => image.name.includes(selectedBrand));
+                let filteredImages = data;
+
+                if (selectedBrand) {
+                    filteredImages = data.filter(image => 
+                        image.name.toLowerCase().includes(selectedBrand.toLowerCase())
+                    );
+                }
+
+                setImages(filteredImages);
+
+                if (filteredImages.length > 0) {
+                    setTimeout(() => {
+                        setImages([
+                            filteredImages[filteredImages.length - 1],
+                            ...filteredImages,
+                            filteredImages[0]
+                        ]);
+                    }, 3000);
+                }
+            } catch (error) {
+                console.error("Error fetching images:", error);
+            }
         }
-        const initilImages = [filteredImages[filteredImages.length -1], ...filteredImages.slice(0, 10), filteredImages[0]]
-        setImages(initilImages);
-        setTimeout(() => {
-            setImages([filteredImages[filteredImages.length -1], ...filteredImages, filteredImages[0]])
-        }, 3000)
+        fetchImages();
     }, [selectedBrand]);
 
     const handleTransitionEnd= () => {
@@ -82,20 +100,20 @@ function Gallery() {
                     onTransitionEnd={handleTransitionEnd}
                 >
                     {images.map((image, index) => {
-                        const { imagekitUrl, publicUrl } = getImageUrl(image.filePath, "gallery")
-                        return (
-                        <img
-                            key = {index}
-                            src={imagekitUrl}
-                            alt={image.name}
-                            className="gallery__carousel-image"
-                            loading="lazy"
-                            onError={(e) => {
-                                e.target.src = publicUrl
-                            }}
-                        />
-                        )
-                    })}
+                        return(
+      <img
+        key={index}
+        src={image.url}
+        alt={image.name || "Imagen"}
+        className="gallery__carousel-image"
+        loading="lazy"
+        onError={(e) => {
+          e.target.src = image.thumbnail; ;
+        }}
+      />
+    );
+  })}
+
                 </div>
             </div>
             <button

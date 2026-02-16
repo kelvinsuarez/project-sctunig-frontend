@@ -1,17 +1,32 @@
 import { useEffect, useState } from "react";
 import CardImage from "./CardImage";
 import PopupCatalog from "./PopupCatalog";
-import imagesData from "../catalogo.json"
+
 
 function Catalog() {
   const [images, setImages] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
   useEffect(() => {
-    setImages(imagesData)
-        // if (folder){
-        //     loadImages(folder);
-        // }
-  }, []);
+  async function fetchCatalogImages() {
+    try {
+      const response = await fetch("/.netlify/functions/getCatalogImages");
+      const data = await response.json();
+      console.log("Catalog images:", data);
+
+      if (Array.isArray(data)) {
+        setImages(data);
+      } else {
+        console.error("Error fetching catalog images:", data);
+        setImages([]); // evita romper el map
+      }
+
+    } catch (error) {
+      console.error("Error fetching catalog images:", error);
+    }
+  }
+  fetchCatalogImages();
+}, []);
+
 
   const handleImageClick = (image) => {
     setSelectedImage(image);
@@ -26,7 +41,7 @@ function Catalog() {
   };
   
   const handleViewGallery = (name) => {
-    const brandKeyword = name.split("-")[0];
+    const brandKeyword = name.replace(/\.[^/.]+$/, "").split("-")[0].toLowerCase();
     window.location.href =`/gallery?marca=${encodeURIComponent(brandKeyword)}`
   };
 
