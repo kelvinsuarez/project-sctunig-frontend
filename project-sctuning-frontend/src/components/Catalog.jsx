@@ -52,6 +52,10 @@ function Catalog() {
     return <div>No hay imágenes disponibles</div>;
   }
 
+  const formatTitle = (filename) => {
+    return filename.replace(/\.[^/.]+$/, "");
+  };
+
   return (
     <>
       <h2>Marcas disponibles</h2>
@@ -69,7 +73,7 @@ function Catalog() {
       </div>
       {selectedImage && (
         <PopupCatalog isOpen={!!selectedImage} onClose={handleCloseModal}>
-          <h2 className="popup-catalog__title">{selectedImage.name}</h2>
+          <h2 className="popup-catalog__title">{formatTitle(selectedImage.name)}</h2>
           <CardImage image={selectedImage} alt={selectedImage.name} className="popup-catalog__image" onClick={() => {}}/>
           <button className="popup-catalog__btn-buy" onClick={() => handleMakeOrder(selectedImage.name)}>Hacer Pedido</button>
           <button className="popup-catalog__btn-view" onClick={() => handleViewGallery(selectedImage.name)}>Ver Modelos en Galería</button>
