@@ -5,9 +5,14 @@ import reactHooks from 'eslint-plugin-react-hooks'
 import reactRefresh from 'eslint-plugin-react-refresh'
 
 export default [
-  { ignores: ['dist'] },
   {
-    files: ['**/*.{js,jsx}'],
+    ignores: [
+      'dist/**',
+      '.netlify/**' // Ignora archivos generados por Netlify
+    ],
+  },
+  {
+    files: ['src/**/*.{js,jsx}'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
@@ -33,6 +38,20 @@ export default [
         'warn',
         { allowConstantExport: true },
       ],
+    },
+  },
+  {
+    files: ['netlify/functions/**/*.js'],
+    languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+      globals: {
+        process: 'readonly', // reconoce process como global válido
+        fetch: 'readonly', // reconoce fetch como global válido
+      },
+    },
+    rules: {
+      ...js.configs.recommended.rules, // solo reglas básicas de JS
     },
   },
 ]

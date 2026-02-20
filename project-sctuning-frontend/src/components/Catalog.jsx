@@ -15,7 +15,10 @@ function Catalog() {
 
       if (Array.isArray(data)) {
         setImages(data);
-      } else {
+      }else if (Array.isArray(data.data)) {
+        setImages(data.data);
+       }
+       else {
         console.error("Error fetching catalog images:", data);
         setImages([]); // evita romper el map
       }
